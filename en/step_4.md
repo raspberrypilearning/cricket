@@ -1,4 +1,4 @@
-## Batting
+## Scoring
 
 --- task ---
 
