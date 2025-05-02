@@ -16,7 +16,7 @@ Select the **Ball** sprite.
 
 ### Start bowling
 
-When a player presses the <kbd> b </kbd> key, the contents of the `Stumps` `list`{:class="microbitvariables"} is deleted, then three items are added: `Left`, `Middle` and `Right`.
+When a player presses the <kbd> b </kbd> key, the contents of the `Stumps` list are deleted, then three list items are added: `Left`, `Middle` and `Right`.
 
 One of these will be chosen at random as the target for the ball.
 
