@@ -12,7 +12,7 @@ If the player has lost all their wickets, then this sprite gives the player thei
 
 --- task ---
 
-Add a `when I receive [wicket! v]`{:class="block3event"} block.
+Add a `when I receive [wicket! v]`{:class="block3events"} block.
 
 ```blocks3
 when I receive [wicket v]
