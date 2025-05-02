@@ -16,7 +16,7 @@ Select the **Ball** sprite.
 
 ### Start bowling
 
-When a player presses the <kbd> b </kbd> key, the contents of the `Stumps` `list`{:class="block3lists"} is deleted, then three items are added: `Left`, `Middle` and `Right`.
+When a player presses the <kbd> b </kbd> key, the contents of the `Stumps` `list`{:class="block3list"} is deleted, then three items are added: `Left`, `Middle` and `Right`.
 
 One of these will be chosen at random as the target for the ball.
 
@@ -27,9 +27,9 @@ Add code to reduce by 1 the number of balls left in the 'over', after a ball is 
 ```blocks3
 when [b v] key pressed
 delete all of [Stumps v]
-add (Left) to [Stumps v]
-add (Middle) to [Stumps v]
-add (Right) to [Stumps v]
+add [Left] to [Stumps v]
+add [Middle] to [Stumps v]
+add [Right] to [Stumps v]
 +change [Balls v] by (-1)
 ```
 
@@ -42,9 +42,9 @@ Add 1 to the number of deliveries bowled in the match.
 ```blocks3
 when [b v] key pressed
 delete all of [Stumps v]
-add (Left) to [Stumps v]
-add (Middle) to [Stumps v]
-add (Right) to [Stumps v]
+add [Left] to [Stumps v]
+add [Middle] to [Stumps v]
+add [Right] to [Stumps v]
 change [Balls v] by (-1)
 +change [Deiveries v] by (1)
 ```
