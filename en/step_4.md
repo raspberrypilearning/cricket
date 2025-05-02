@@ -60,7 +60,7 @@ else
 
 --- task ---
 
-Use `join`{:class="block3operator"} blocks to tell the player what they scored.
+Use `join`{:class="block3operators"} blocks to tell the player what they scored.
 
 ```blocks3
 when I receive [wicket v]

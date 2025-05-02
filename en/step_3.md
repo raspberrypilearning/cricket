@@ -102,7 +102,7 @@ else
 
 If the bat was not touching the ball wen it arrived at a stump, then the player loses a wicket.
 
-Add a broadcast{:class="block3events"} so this can be handled by the **Middle** stump sprite.
+Add a `broadcast`{:class="block3events"} so this can be handled by the **Middle** stump sprite.
 
 ```blocks3
 when I receive [ball bowled v]
