@@ -15,7 +15,7 @@ If the player has lost all their wickets, then this sprite gives the player thei
 Add a `when I receive [wicket! v]`{:class="block3events"} block.
 
 ```blocks3
-when I receive [wicket v]
+when I receive [wicket! v]
 ```
 
 --- /task ---
@@ -25,7 +25,7 @@ when I receive [wicket v]
 Reduce the wickets by 1.
 
 ```blocks3
-when I receive [wicket v]
+when I receive [wicket! v]
 +change [Wickets v] by (-1)
 ```
 
@@ -36,7 +36,7 @@ when I receive [wicket v]
 Check if all wickets have been lost.
 
 ```blocks3
-when I receive [wicket v]
+when I receive [wicket! v]
 change [Wickets v] by (-1)
 +if <(Wickets) = (0) > then
 else
@@ -49,7 +49,7 @@ else
 Tell the player their 'team' is all out!
 
 ```blocks3
-when I receive [wicket v]
+when I receive [wicket! v]
 change [Wickets v] by (-1)
 if <(Wickets) = (0) > then
 +say [ALL OUT!] for (1) seconds
@@ -63,7 +63,7 @@ else
 Use `join`{:class="block3operators"} blocks to tell the player what they scored.
 
 ```blocks3
-when I receive [wicket v]
+when I receive [wicket! v]
 change [Wickets v] by (-1)
 if <(Wickets) = (0) > then
 say [ALL OUT!] for (1) seconds
@@ -78,7 +78,7 @@ else
 If the player still has wickets left, tell them the current batter is out.
 
 ```blocks3
-when I receive [wicket v]
+when I receive [wicket! v]
 change [Wickets v] by (-1)
 if <(Wickets) = (0) > then
 say [ALL OUT!] for (1) seconds
