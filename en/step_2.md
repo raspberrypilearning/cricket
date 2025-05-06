@@ -16,7 +16,7 @@ Select the **Ball** sprite.
 
 ### Start bowling
 
-When a player presses the <kbd> b </kbd> key, the contents of the `Stumps` list are deleted, then three list items are added: `Left`, `Middle` and `Right`.
+When a player presses the <kbd>b</kbd> key, the contents of the `Stumps` list are deleted, then three list items are added: `Left`, `Middle` and `Right`.
 
 One of these will be chosen at random as the target for the ball.
 
@@ -70,7 +70,7 @@ change [Deiveries v] by (1)
 
 ### Take aim!
 
-The player needs to move their bat to the stump that the ball is moving towards.
+A ball will be bowled to a random stump.
 
 --- task ---
 
@@ -87,7 +87,7 @@ go to x: (120) y: (80)
 
 --- task ---
 
-Tell the player which stump is chosen (so they know where to move their bat later)
+Tell the player which stump is chosen (so they know where to move their bat later).
 
 ```blocks3
 when I receive [New Ball v]
@@ -103,7 +103,7 @@ set [Stump v] to (item(pick random (1) to (3)) of [Stumps v])
 
 --- task ---
 
-To move the ball to the chose stump, it needs to point towards that stump and then move towards it, until it reaches it.
+To move the ball to the chosen stump, it needs to point towards that stump and then move towards it, until it reaches it.
 
 ```blocks3
 when I receive [New Ball v]
