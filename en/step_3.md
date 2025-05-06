@@ -129,3 +129,9 @@ else
 ```
 
 --- /task ---
+
+--- task ---
+
+**Test:** Play your game to see what happens when a batter hits a ball and also what happens when they miss!
+
+--- /task ---

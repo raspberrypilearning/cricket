@@ -115,4 +115,8 @@ point in direction (90)
 
 --- /task ---
 
---- play ---
+--- task ---
+
+**Test:** Play your game and check the bails fly off when the batter is bowled out!
+
+--- /task ---

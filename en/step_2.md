@@ -2,7 +2,7 @@
 
 --- task ---
 
-Open the [starter project](https://scratch.mit.edu/projects/1168845390/editor/){:target="_blank"}.
+Open the [starter project](https://scratch.mit.edu/projects/1170742109/editor/){:target="_blank"}.
 
 --- /task ---
 
@@ -212,5 +212,11 @@ if <(Balls) = (0)> then
 +set (Balls v ) to (6)
 end
 ```
+
+--- /task ---
+
+--- task ---
+
+**Test:** Play your game and check what happens when a ball is bowled!
 
 --- /task ---

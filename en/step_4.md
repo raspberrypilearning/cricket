@@ -87,3 +87,9 @@ else
 +say [OUT!] for (0.5) seconds
 ```
 --- /task ---
+
+--- task ---
+
+**Test:** Play your game and see what happens when the batter is bowled out!
+
+--- /task ---
