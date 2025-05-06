@@ -92,6 +92,12 @@ Drag the complete code from the `BailL` sprite to the `BailR` sprite.
 
 --- task ---
 
+Click on the `BailR` sprite to select it and check your copied code is there.
+
+--- /task ---
+
+--- task ---
+
 Change the reset position of the `BailR` sprite.
 
 ```blocks3
@@ -108,3 +114,5 @@ point in direction (90)
 ```
 
 --- /task ---
+
+--- play ---
