@@ -71,6 +71,7 @@ set [Runs v] to (pick random (1) to (6))
 say [1 run!] for (.5) seconds
 else
 say (join (Runs) [ runs!]) for (.5) seconds
+end
 else
 ```
 
@@ -91,6 +92,7 @@ say [1 run!] for (.5) seconds
 else
 say (join (Runs) [ runs!]) for (.5) seconds
 +change [Score v] by (Runs)
+end
 else
 ```
 
@@ -113,6 +115,7 @@ say [1 run!] for (.5) seconds
 else
 say (join (Runs) [ runs!]) for (.5) seconds
 change [Score v] by (Runs)
+end
 else
 +broadcast (wicket! v)
 ```
