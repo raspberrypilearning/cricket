@@ -30,11 +30,19 @@ set [Shot v] to [Right]
 
 A `ball bowled`{:class="block3events"} event is broadcast after the ball reaches its target stump
 
-In the `when I receive [ball bowled v]`{:class="block3events"} block:
+--- task ---
+
+Add a `when I receive [ball bowled v]`{:class="block3events"} block.
+
+```blocks3
+when I receive [ball bowled v]
+```
+
+--- /task ---
 
 --- task ---
 
-Check if the bat sprite is touching the **Ball** sprite.
+In the `when I receive [ball bowled v]`{:class="block3events"} block, check if the bat sprite is touching the **Ball** sprite.
 
 ```blocks3
 when I receive [ball bowled v]
@@ -91,8 +99,8 @@ if <(Runs) = (1)> then
 say [1 run!] for (.5) seconds
 else
 say (join (Runs) [ runs!]) for (.5) seconds
-+change [Score v] by (Runs)
 end
++change [Score v] by (Runs)
 else
 ```
 
@@ -104,7 +112,7 @@ else
 
 If the bat was not touching the ball wen it arrived at a stump, then the player loses a wicket.
 
-Add a `broadcast`{:class="block3events"} so this can be handled by the **Middle** stump sprite.
+Add a new `broadcast`{:class="block3events"}, so this can be handled by the **Middle** stump sprite.
 
 ```blocks3
 when I receive [ball bowled v]
@@ -114,8 +122,8 @@ if <(Runs) = (1)> then
 say [1 run!] for (.5) seconds
 else
 say (join (Runs) [ runs!]) for (.5) seconds
-change [Score v] by (Runs)
 end
+change [Score v] by (Runs)
 else
 +broadcast (wicket! v)
 ```

@@ -60,14 +60,14 @@ else
 
 --- task ---
 
-Use `join`{:class="block3operators"} blocks to tell the player what they scored.
+Use **four** `join`{:class="block3operators"} blocks to tell the player what they scored.
 
 ```blocks3
 when I receive [wicket! v]
 change [Wickets v] by (-1)
 if <(Wickets) = (0) > then
 say [ALL OUT!] for (1) seconds
-+say (join [You scored: ] (join (score) (join [ from ] (join (Deliveries) [ deliveries!])))) for (2) seconds
++say (join [You scored: ] (join (Score) (join [ from ] (join (Deliveries) [ deliveries!])))) for (2) seconds
 else
 ```
 
@@ -82,7 +82,7 @@ when I receive [wicket! v]
 change [Wickets v] by (-1)
 if <(Wickets) = (0) > then
 say [ALL OUT!] for (1) seconds
-say (join [You scored: ] (join (score) (join [ from ] (join (Deliveries) [ deliveries!])))) for (2) seconds
+say (join [You scored: ] (join (Score) (join [ from ] (join (Deliveries) [ deliveries!])))) for (2) seconds
 else
 +say [OUT!] for (0.5) seconds
 ```

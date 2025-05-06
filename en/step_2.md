@@ -144,7 +144,7 @@ end
 
 --- task ---
 
-Add a `broadcast`{:class="block3events"} message.
+Add a new `broadcast`{:class="block3events"} message.
 
 ```blocks3
 when I receive [New Ball v]
