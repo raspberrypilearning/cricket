@@ -14,67 +14,13 @@ Select the **Ball** sprite.
 
 --- /task ---
 
-### Start bowling
-
-When a player presses the <kbd>b</kbd> key, the contents of the `Stumps` list are deleted, then three list items are added: `Left`, `Middle` and `Right`.
-
-One of these will be chosen at random as the target for the ball.
-
---- task ---
-
-Add code to reduce by 1 the number of balls left in the 'over', after a ball is bowled.
-
-```blocks3
-when [b v] key pressed
-delete all of [Stumps v]
-add [Left] to [Stumps v]
-add [Middle] to [Stumps v]
-add [Right] to [Stumps v]
-+change [Balls v] by (-1)
-```
-
---- /task ---
-
---- task ---
-
-Add 1 to the number of deliveries bowled in the match.
-
-```blocks3
-when [b v] key pressed
-delete all of [Stumps v]
-add [Left] to [Stumps v]
-add [Middle] to [Stumps v]
-add [Right] to [Stumps v]
-change [Balls v] by (-1)
-+change [Deiveries v] by (1)
-```
-
---- /task ---
-
---- task ---
-
-`Broadcast`{:class="block3events"} a message to tell other sprites that a ball is being bowled.
-
-```blocks3
-when [b v] key pressed
-delete all of [Stumps v]
-add [Left] to [Stumps v]
-add [Middle] to [Stumps v]
-add [Right] to [Stumps v]
-change [Balls v] by (-1)
-change [Deiveries v] by (1)
-+broadcast (New Ball v)
-```
-
---- /task ---
-
 ### Take aim!
 
 A ball will be bowled to a random stump.
 
 --- task ---
 
-In the `when I receive`{:class="block3events"} block, randomly set the stump to bowl at.
+In the `when I receive`{:class="block3events"} block, set a random stump to bowl at.
 
 ```blocks3
 when I receive [New Ball v]
@@ -87,7 +33,7 @@ go to x: (120) y: (80)
 
 --- task ---
 
-Tell the player which stump is chosen (so they know where to move their bat later).
+Tell the player the chosen stump (so they know where to move their bat later).
 
 ```blocks3
 when I receive [New Ball v]
@@ -99,11 +45,11 @@ set [Stump v] to (item(pick random (1) to (3)) of [Stumps v])
 
 --- /task ---
 
-### Move the ball to the target
+### Bowl at the stump
 
 --- task ---
 
-To move the ball to the chosen stump, it needs to point towards that stump and then move towards it, until it reaches it.
+The ball points towards the chosen stump and moves towards it, until it reaches it.
 
 ```blocks3
 when I receive [New Ball v]
@@ -123,7 +69,7 @@ end
 
 --- task ---
 
-As the bowl moves to the stump, it is moving further away so should look smaller as it does so.
+The ball should look smaller as it moves towards the stump.
 
 ```blocks3
 when I receive [New Ball v]
@@ -209,7 +155,7 @@ broadcast (ball bowled v)
 wait (1) seconds
 if <(Balls) = (0)> then
 +say [That's over!] for (1) seconds
-+set (Balls v ) to (6)
++set [Balls v ] to (6)
 end
 ```
 
@@ -217,6 +163,6 @@ end
 
 --- task ---
 
-**Test:** Play your game and check what happens when a ball is bowled!
+**Test:** Press <kbd>n</kbd> then <kbd>b</kbd> - check ‘That’s over!’ is called after six balls and the Balls variable is reset to 6.
 
 --- /task ---

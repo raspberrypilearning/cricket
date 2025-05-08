@@ -22,7 +22,7 @@ when I receive [wicket! v]
 
 --- task ---
 
-Reduce the wickets by 1.
+Reduce wickets by 1.
 
 ```blocks3
 when I receive [wicket! v]
@@ -33,7 +33,7 @@ when I receive [wicket! v]
 
 --- task ---
 
-Check if all wickets have been lost.
+Check if no wickets remain.
 
 ```blocks3
 when I receive [wicket! v]
@@ -46,7 +46,7 @@ else
 
 --- task ---
 
-Tell the player their 'team' is all out!
+Tell the player their 'team' is out.
 
 ```blocks3
 when I receive [wicket! v]
@@ -60,7 +60,7 @@ else
 
 --- task ---
 
-Use **four** `join`{:class="block3operators"} blocks to tell the player what they scored.
+Use **four** `join`{:class="block3operators"} blocks to tell the player the score.
 
 ```blocks3
 when I receive [wicket! v]
@@ -75,7 +75,7 @@ else
 
 --- task ---
 
-If the player still has wickets left, tell them the current batter is out.
+If the player has wickets left, tell them the batter is out.
 
 ```blocks3
 when I receive [wicket! v]
@@ -90,6 +90,6 @@ else
 
 --- task ---
 
-**Test:** Play your game and see what happens when the batter is bowled out!
+**Test:** Press <kbd>n</kbd> then <kbd>b</kbd> and get out **three** times - check the player is told each batter is ‘OUT!’ and, when all three wickets are lost, check the player is told the team is ‘ALL OUT!’ and the score is given.
 
 --- /task ---
