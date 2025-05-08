@@ -2,7 +2,7 @@
 
 --- task ---
 
-Select the **Middle** stump sprite.
+Select the **Middle** stump sprite. ![The Middle stump sprite](images/Middle.png)
 
 --- /task ---
 

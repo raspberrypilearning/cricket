@@ -10,7 +10,7 @@ The starter project contains some starter code and all the sprites you need.
 
 --- task ---
 
-Select the **Ball** sprite.
+Select the **Ball** sprite. ![The Ball sprite](images/Ball.png)
 
 --- /task ---
 

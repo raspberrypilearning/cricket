@@ -8,7 +8,7 @@ Some code is already added for you.
 
 --- task ---
 
-Select the **Bat** sprite.
+Select the **Bat** sprite. ![The Bat sprite](images/Bat.png)
 
 --- /task ---
 

@@ -1,6 +1,6 @@
 ### Knock the bails off!
 
-Start with the `Bail left` sprite
+Start with the `Bail left` sprite. ![The Bail left sprite](images/BailL.png)
 
 --- task ---
 
@@ -100,7 +100,9 @@ Drag the complete code from the `Bail left` sprite to the `Bail right` sprite to
 
 --- task ---
 
-Click on the `Bail right` sprite to select it and check your copied code is there.
+Click on the `Bail right` sprite. ![The Bail right sprite](images/BailR.png)
+
+Check your copied code is there.
 
 --- /task ---
 
