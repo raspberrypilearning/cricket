@@ -91,15 +91,17 @@ else
 
 Tell the player how many runs they scored.
 
+**Notice**: There is a space before the word 'runs!' to separate the number of runs from the word 'runs!'.
+
 ```blocks3
 when I receive [ball bowled v]
 if <touching (Ball v)?> then
 set [Runs v] to (pick random (1) to (6))
 change [Score v] by (Runs)
 +if <(Runs) = (1)> then
-say [1 run!] for (.5) seconds
+say [1 run!] for (0.5) seconds
 else
-say (join (Runs) [ runs!]) for (.5) seconds
+say (join (Runs) [ runs!]) for (0.5) seconds
 end
 else
 ```
@@ -134,6 +136,6 @@ else
 
 --- task ---
 
-**Test:** Press <kbd>n</kbd> then <kbd>b</kbd> and move the bat to score runs - check the player is told the number of runs scored.
+**Test:** Press `n` then `b` and move the bat to score runs - check the player is told the number of runs scored.
 
 --- /task ---
