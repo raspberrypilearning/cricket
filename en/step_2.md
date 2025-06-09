@@ -163,6 +163,6 @@ end
 
 --- task ---
 
-**Test:** Press <kbd>n</kbd> then <kbd>b</kbd> - check ‘That’s over!’ is called after six balls and the Balls variable is reset to 6.
+**Test:** Press `n` then `b` - check ‘That’s over!’ is called after six balls and the Balls variable is reset to 6.
 
 --- /task ---
