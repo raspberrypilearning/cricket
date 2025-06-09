@@ -155,7 +155,7 @@ broadcast (ball bowled v)
 wait (1) seconds
 if <(Balls) = (0)> then
 +say [That's over!] for (1) seconds
-+set [Balls v ] to (6)
++set [Balls v] to (6)
 end
 ```
 
