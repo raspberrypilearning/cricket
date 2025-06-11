@@ -91,7 +91,7 @@ else
 
 Tell the player how many runs they scored.
 
-**Notice**: There is a space before the word 'runs!' to separate the number of runs from the word 'runs!'.
+**Notice**: There is a space before the word 'runs!' to separate the number of Runs from the word 'runs!'.
 
 ```blocks3
 when I receive [ball bowled v]
@@ -123,9 +123,9 @@ when I receive [ball bowled v]
 if <touching (Ball v)?> then
 set [Runs v] to (pick random (1) to (6))
 if <(Runs) = (1)> then
-say [1 run!] for (.5) seconds
+say [1 run!] for (0.5) seconds
 else
-say (join (Runs) [ runs!]) for (.5) seconds
+say (join (Runs) [ runs!]) for (0.5) seconds
 end
 change [Score v] by (Runs)
 else
