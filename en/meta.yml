@@ -1,0 +1,17 @@
+title: Cricket
+hero_image: images/banner.png
+description: Build your own cricket game with Scratch!
+version: 1
+listed: false
+copyedit: false
+last_tested: "2025-01-01"
+steps:
+  - title: What you will make
+  - title: Bowling
+    completion: engaged
+  - title: Batting
+  - title: Out!
+    completion: internal
+  - title: Challenge
+    challenge: true
+    completion: external
