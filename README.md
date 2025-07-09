@@ -1,4 +1,4 @@
-# default-project-template
+# Cricket
 
 ![Cricket](banner.png)
 
