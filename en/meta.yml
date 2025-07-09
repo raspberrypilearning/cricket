@@ -8,10 +8,13 @@ last_tested: "2025-01-01"
 steps:
 - title: What you will make
 - title: Bowling
-  completion: engaged
+  completion: 
+  - engaged
 - title: Batting
 - title: Out!
-  completion: internal
+  completion: 
+  - internal
 - title: Challenge
   challenge: true
-  completion: external
+  completion: 
+  - external
