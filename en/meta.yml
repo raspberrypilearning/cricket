@@ -11,7 +11,7 @@ steps:
   completion: 
     - engaged
   - title: Batting
-  - title: "Out!"
+  - title: Out!
   completion: 
     - internal
   - title: Challenge
