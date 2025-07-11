@@ -1,6 +1,6 @@
 title: Cricket
 hero_image: images/banner.png
-description: Build your own cricket game with Scratch!
+description: Build your own cricket game with Scratch
 version: 1
 listed: false
 copyedit: false
@@ -11,7 +11,7 @@ steps:
     completion: 
       - engaged
   - title: Batting
-  - title: Out!
+  - title: Out
     completion: 
       - internal
   - title: Challenge
