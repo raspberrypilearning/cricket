@@ -9,12 +9,12 @@ steps:
   - title: What you will make
   - title: Bowling
     completion: 
-    - engaged
+      - engaged
   - title: Batting
   - title: Out!
     completion: 
-    - internal
+      - internal
   - title: Challenge
     challenge: true
     completion: 
-    - external
+      - external
