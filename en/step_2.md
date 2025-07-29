@@ -2,7 +2,7 @@
 
 --- task ---
 
-Open the [starter project](https://scratch.mit.edu/projects/1170742109/editor/){:target="_blank"}.
+Open the [starter project](https://scratch.mit.edu/projects/1202431572/editor/){:target="_blank"}.
 
 --- /task ---
 
