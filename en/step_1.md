@@ -15,7 +15,7 @@ Use the controls to play the finished game.
 **Tip**: Press <kbd>n</kbd> to start a new game!
 
 <div class="scratch-preview">
- <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/1170796691/?autostart=false" frameborder="0"></iframe>
+ <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/1202448080/?autostart=false" frameborder="0"></iframe>
 </div>
 
 --- /no-print ---
