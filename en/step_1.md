@@ -4,7 +4,7 @@ Create a fun cricket game!
 
 --- print-only ---
 
-![The finished cricket game showing a cricket field with the title and controls visible](images/cricket.png)
+![The finished cricket game showing a cricket field with the title and controls visible.](images/cricket.png)
 
 --- /print-only ---
 
