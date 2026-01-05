@@ -1,10 +1,12 @@
-### Knock the bails off!
+### Knock the bails off
 
-Start with the `Bail left` sprite. ![The Bail left sprite](images/BailL.png)
+Start with the **Bail left** sprite. 
+
+![The Bail left sprite.](images/BailL.png)
 
 --- task ---
 
-Add a `when I receive [wicket! v]`{:class="block3events"} block.
+Add a `when I receive wicket!`{:class="block3events"} block.
 
 ```blocks3
 when I receive [wicket! v]
@@ -12,7 +14,7 @@ when I receive [wicket! v]
 
 --- /task ---
 
-To create a spinning bail, your code will repeat some motion many times.
+To create a spinning bail, your code needs to repeat some motion many times.
 
 --- task ---
 
@@ -28,7 +30,7 @@ end
 
 --- task ---
 
-Add `motion`{:class="block3motion"} blocks to turn and move the bail randomly each time the code repeats.
+Add `Motion`{:class="block3motion"} blocks to turn and move the bail randomly each time the code repeats.
 
 ```blocks3
 when I receive [wicket! v]
@@ -40,7 +42,7 @@ end
 
 --- /task ---
 
-Change the size randomly.
+You need to change the size of the bail randomly too.
 
 --- task ---
 
@@ -59,7 +61,7 @@ end
 
 --- task ---
 
-Experiment with different values for turn and move.
+Experiment with different values for the `turn`{:class="block3motion"} and `move`{:class="block3motion"} blocks.
 
 --- /task ---
 
@@ -67,7 +69,7 @@ Experiment with different values for turn and move.
 
 --- task ---
 
-Add a wait block, then reset the `size`{:class="block3looks"}, `position`{:class="block3motion"} and rotation `(direction)`{:class="block3motion"}.
+Add a `wait`{:class="block3control"} block, then reset the `size`{:class="block3looks"}, `x: y:`{:class="block3motion"} position, and rotation `direction`{:class="block3motion"} of the bail.
 
 ```blocks3
 when I receive [wicket! v]
@@ -86,29 +88,31 @@ end
 
 --- task ---
 
-**Test:** Press <kbd>n</kbd> then <kbd>b</kbd> and get bowled - check the left bail flies off!
+**Test:** Press <kbd>n</kbd> then <kbd>b</kbd>, then get bowled. Check that the left bail flies off.
 
 --- /task ---
 
-### Make them both fly!
+### Make both bails fly
 
 --- task ---
 
-Drag the complete code from the `Bail left` sprite to the `Bail right` sprite to copy it.
-
---- /task ---
-
---- task ---
-
-Click on the `Bail right` sprite. ![The Bail right sprite](images/BailR.png)
-
-Check your copied code is there.
+Drag the complete code from the **Bail left** sprite to the **Bail right** sprite to copy it.
 
 --- /task ---
 
 --- task ---
 
-Change the reset position of the `Bail right` sprite.
+Click on the **Bail right** sprite.
+
+![The Bail right sprite.](images/BailR.png)
+
+Check that the code that you have copied is there.
+
+--- /task ---
+
+--- task ---
+
+Change the reset position of the **Bail right** sprite.
 
 ```blocks3
 when I receive [wicket! v]
@@ -127,6 +131,6 @@ point in direction (90)
 
 --- task ---
 
-**Test:** Press <kbd>n</kbd> then <kbd>b</kbd> and get out - check both bails fly off!
+**Test:** Press <kbd>n</kbd> then <kbd>b</kbd>, then get out. Check that both bails fly off.
 
 --- /task ---

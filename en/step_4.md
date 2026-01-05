@@ -2,17 +2,19 @@
 
 --- task ---
 
-Select the **Middle** stump sprite. ![The Middle stump sprite](images/Middle.png)
+Select the **Middle** stump sprite.
+
+![The Middle stump sprite.](images/Middle.png)
 
 --- /task ---
 
-This sprite tells the player they are out and reduces the number of wickets by 1.
+This sprite will tell the player that the current batter is out and reduce the number of wickets by 1.
 
-If the player has lost all their wickets, then this sprite gives the player their score.
+If the batters have all lost their wickets, this sprite will give the player their score.
 
 --- task ---
 
-Add a `when I receive [wicket! v]`{:class="block3events"} block.
+Add a `when I receive wicket!`{:class="block3events"} block.
 
 ```blocks3
 when I receive [wicket! v]
@@ -22,7 +24,7 @@ when I receive [wicket! v]
 
 --- task ---
 
-Reduce wickets by 1.
+Reduce `Wickets`{:class="block3variables"} by 1.
 
 ```blocks3
 when I receive [wicket! v]
@@ -46,7 +48,7 @@ else
 
 --- task ---
 
-Tell the player their 'team' is out.
+If no wickets remain, tell the player that their 'team' is out.
 
 ```blocks3
 when I receive [wicket! v]
@@ -75,7 +77,7 @@ else
 
 --- task ---
 
-Combine **two** `join`{:class="block3operators"} blocks to tell the player the deliveries.
+Combine **two** `join`{:class="block3operators"} blocks to tell the player the number of deliveries.
 
 ```blocks3
 when I receive [wicket! v]
@@ -91,7 +93,7 @@ else
 
 --- task ---
 
-If the player has wickets left, tell them the batter is out.
+If the player has wickets left, tell them that the current batter is out.
 
 ```blocks3
 when I receive [wicket! v]
@@ -107,6 +109,6 @@ else
 
 --- task ---
 
-**Test:** Press <kbd>n</kbd> then <kbd>b</kbd> and get out **three** times - check the player is told each batter is ‘OUT!’ and, when all three wickets are lost, check the player is told the team is ‘ALL OUT!’ and the score is given.
+**Test:** Press <kbd>n</kbd>, then use the <kbd>b</kbd> key to get out **three** times. Check that the player is told each batter is "OUT!", and when all three batters have lost their wickets, check that the player is told the team is "ALL OUT!" and is given the score.
 
 --- /task ---
