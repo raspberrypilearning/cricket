@@ -1,22 +1,24 @@
-## Batting
+## Move the bat
 
 The player needs to move the bat to the stump the ball is moving towards.
 
-Some code is already added for you.
+Some code has been added for you already.
 
 ### Complete the bat controls
 
 --- task ---
 
-Select the **Bat** sprite. ![The Bat sprite](images/Bat.png)
+Select the **Bat** sprite. 
+
+![The Bat sprite.](images/Bat.png)
 
 --- /task ---
 
-Set the shot to `Right` stump when the <kbd>d</kbd> key is pressed.
+You need to make the bat move to the right stump when the <kbd>d</kbd> key is pressed.
 
 --- task ---
 
-Copy or duplicate the script for the <kbd>a</kbd> or <kbd>s</kbd> key controls.
+Copy or duplicate the script for the <kbd>a</kbd> or <kbd>s</kbd> key controls and change the values so the shot is set to the `Right` stump when the <kbd>d</kbd> key is pressed.
 
 ```blocks3
 when [d v] key pressed
@@ -28,11 +30,11 @@ set [Shot v] to [Right]
 
 ### After a ball is bowled
 
-A `ball bowled`{:class="block3events"} event is broadcast after the ball reaches a stump.
+A `ball bowled`{:class="block3events"} event is broadcast when the ball reaches a stump.
 
 --- task ---
 
-Add a `when I receive [ball bowled v]`{:class="block3events"} block.
+Add a `when I receive ball bowled`{:class="block3events"} block to the **Bat** sprite.
 
 ```blocks3
 when I receive [ball bowled v]
@@ -42,7 +44,7 @@ when I receive [ball bowled v]
 
 --- task ---
 
-Check if the bat sprite is touching the ball.
+Check if the **Bat** sprite is touching the ball.
 
 ```blocks3
 when I receive [ball bowled v]
@@ -54,7 +56,7 @@ else
 
 --- task ---
 
-If the bat is touching the Ball sprite, the player scores some runs!
+If the bat is touching the ball, the player needs to score some runs!
 
 ```blocks3
 when I receive [ball bowled v]
@@ -63,13 +65,13 @@ if <touching (Ball v)?> then
 else
 ```
 
-**Notice**: The number of runs scored is a random number between `1` and `6`.
+**Notice:** The number of runs scored is a random number between `1` and `6`.
 
 --- /task ---
 
 --- task ---
 
-Update the Score variable.
+Update the `Score`{:class="block3variables"} variable.
 
 ```blocks3
 when I receive [ball bowled v]
@@ -83,7 +85,7 @@ else
 
 --- task ---
 
-**Test:** Press <kbd>n</kbd> then <kbd>b</kbd> and move the bat - check the player can score runs.
+**Test:** Press <kbd>n</kbd> then <kbd>b</kbd>, then move the bat. Check that the player can score runs.
 
 --- /task ---
 
@@ -91,7 +93,7 @@ else
 
 Tell the player how many runs they scored.
 
-**Notice**: There is a space before the word 'runs!' to separate the number of Runs from the word 'runs!'.
+**Notice:** There is a space before the word 'runs' to separate the number of runs from the word 'runs'.
 
 ```blocks3
 when I receive [ball bowled v]
@@ -106,17 +108,17 @@ end
 else
 ```
 
-**Notice**: The code checks if the player scored just 1 run, because it wouldn't sound right to say “1 runs!” instead of “1 run!”. It says something different if the score is between 2 and 6 runs.
+**Notice:** The code checks if the player scored just one run, because it would not sound right to say “1 runs!” instead of “1 run!”. It uses the word 'runs' if the score is between two and six runs.
 
 --- /task ---
 
 --- task ---
 
-If the bat is not touching the ball when it arrives at a stump, lose a wicket.
+If the bat is not touching the ball when it arrives at a stump, the player needs to lose a wicket.
 
-This is handled by the **Middle** stump sprite.
+You will add code to the **Middle** stump sprite to handle this.
 
-Add a new `broadcast`{:class="block3events"} message.
+Add a new `broadcast`{:class="block3events"} message to inform the **Middle** stump sprite.
 
 ```blocks3
 when I receive [ball bowled v]
@@ -136,6 +138,6 @@ else
 
 --- task ---
 
-**Test:** Press `n` then `b` and move the bat to score runs - check the player is told the number of runs scored.
+**Test:** Press `n` then `b`, then move the bat to score runs. Check that the player is told the number of runs they have scored.
 
 --- /task ---
